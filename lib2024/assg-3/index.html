@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- setting up the language -->
+<html lang="en-ca">
+<!-- setting up the head tag to contain the title and metas -->
+<head>
+	<!-- appropriate title -->
+	<title>Assignment 3</title>
+	<!-- have all the main metas in there -->
+	<meta charset="utf-8">
+	<meta name="Author" content="Dave Lavoie">
+	<meta name="Description" content="This is an HTML document dealing with HTML Forms">
+	<meta name="keywords" content="HTML, HTML5, Forms, Forms and Values">
+	<meta name="robots" content="no index, no follow">
+	<!-- head tag is complete above -->
+</head>
+<!-- setting up the body below to contain the content -->
+<body>
+	<!-- the header is next with identification -->
+	<header id="header">
+		<!-- the header contains the public facing document title appropriate to the content -->
+		<h1>Assignment 3</h1>
+	</header>
+	<!-- the header is closed and we begin the main below -->
+	<main>
+	<!-- the section is below and it is importnt to provide both id and class -->
+		<section id="html-forms" class="main-section">
+			<!-- the form requires the action and method attributes to be valid, as action is the page where the data goes and method is how the data reaches its destination -->
+			<form action="randompage" method="get">
+				<!-- id and class attributes are present throughout the document -->
+				<div id="fn-container" class="form-elm">
+					<!-- the input element must be and is accompanied by a label -->
+					<label for="FirstName">First name</label>
+					<!-- the input element must have 2 atributes, type and form. Type determines the input type (text, password, number etc) and name is the unique identification for this input when the data is submitted to the server mentioed in the action attribute of the form -->
+					<!-- the placeholder provides information to the user -->
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+				</div>
+				<!-- each form is organized separately with its id and class attributes, label tag and input element -->
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last name</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your last name here">
+				</div>
+				<!-- this form contains a value attribute which saves the input and sends it to the server. the email input field furthermore requires an @ to be valid -->
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="your-address@x.com" readonly>
+				</div>
+				<div id="pass-container" class="form-elm">
+					<!-- the password input type is used to create password inputs, with the value being written being hidden and replaced by bullets for privacy -->
+					<label for="pass">Password</label>
+					<input type="Password" name="pass" id="pass" required>
+				</div>
+				<!-- this form allows for a person to provide greater information via text. the textarea tag defines a multi-line input control and allows you to submit more than 1 line of text -->
+				<div id="sum-container" class="form-elm">
+					<label for="summary">Introductory Text</label>
+					<textarea name="summary" id="summary" placeholder="Share your summary here"></textarea>
+				</div>
+				<!-- the input type 'date' will allow a person to choose a date via picker and the value is validated per html as being an actual date -->
+				<div id="st-container" class="form-elm">
+					<label for="dte">Date of Birth</label>
+					<input type="Date" name="dte" id="dte">
+				</div>
+				<!-- the input type 'number' allows for the use of numbers, a phone number in this case -->
+				<div id="numbercontainer" class="form-elm">
+					<label for="number">Phone number</label>
+					<input type="number" name="Phone" id="number" placeholder="Enter mobile phone number">
+				</div>
+				<!-- the input type 'radio' provides a person with a single value checkbox wherein they can select a sole option, in this case per their gender -->
+				<div id="radiocontainer" class="form-elm">
+					<p>Gender</p>
+					<label for="male">
+						<input type="radio" name="gender-form" id="male" value="yes" checked>Male
+					</label>
+					<label>
+						<input type="radio" name="gender-form" id="female" value="female">Female
+					</label>
+					<label>
+						<input type="radio" name="gender-form" id="other" value="other">Other
+					</label>
+				</div>
+				<div id="addresscontainer" class="form-elm">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="Enter your address">
+				</div>
+				<!-- another text form wherein a person can denote their city via text with a placeholder to give them instruction -->
+				<div id="citycontainer" class="form-elm">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" placeholder="Enter your City">
+				</div>
+				<!-- the option group creates groups in a select element, in this case and the form to come we allow for the selection of province and then country by the user. The select is paired with option and is used to create dropdowns in html -->
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province:</label>
+					<select name="province" id="province">
+						<option value="ontario">Ontario</option>
+						<option value="quebec">Quebec</option>
+						<option value="nova scotia" selected>Nova Scotia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="british columbia">British Columbia</option>
+					</select>
+				</div>
+				<div id="country-drop-container" class="form-elm">
+					<label for="country">Country:</label>
+					<select name="country" id="country">
+						<option value="canada">Canada</option>
+						<option value="spain">Spain</option>
+						<option value="uganda" selected>Uganda</option>
+						<option value="chile">Chile</option>
+						<option value="japan">Japan</option>
+					</select>
+				</div>
+				<!-- here we provide a form to capture a postal code via text with a clear placeholder -->
+				<div id="postal-container" class="form-elm">
+					<label for="postalcode">Postal Code</label>
+					<input type="text" name="postalcode" id="postalcode" placeholder="A1A 1A1">
+				</div>
+				<!-- the fieldset creates a segment inside the form and is used to create groups of input type for display in a box. this will be read by the SEO crawler as a whole with the fieldset values being used to determine the overall rank of the page. -->
+				<fieldset>
+					<legend>Select Hobbies & Interests</legend>
+					<div>
+						<!-- had to shout us out here with this first option :) -->
+						<label for="coding">
+							Coding
+							<input type="checkbox" name="coding" id="coding" checked>
+						</label>
+						<label>
+							Exercise
+							<input type="checkbox" name="exercise" id="exercise" checked>
+						</label>
+						<label>
+							Cards
+							<input type="checkbox" name="cards" id="cards" checked>
+						</label>
+						<label>
+							Cooking
+							<input type="checkbox" name="cooking" id="cooking" checked>
+						</label>
+						<label>
+							Netflix
+							<input type="checkbox" name="netflix" id="netflix" checked>
+						</label>
+					</div>
+				</fieldset>
+				<!-- the input type url is validated in HTML5 and thus will not accept a non url value -->
+				<div id="url-container" class="form-elm">
+					<label for="ur">Website (URL):</label>	
+					<input type="url" name="ur" id="ur" ><br>
+				</div>
+				<!-- the button type 'submit' creates a button that submits the form, with the content being validated by the browser -->
+				<button type="submit">Submit</button>
+				<!-- the 'reset' button type resets the form values without having to refresh the page -->
+				<button type="reset">Reset</button>
+				<!-- closing the form -->
+			</form>
+			<!-- closing the section -->
+		</section>
+		<!-- closing the main -->
+</main>
+<!-- adding a simple footer -->
+<footer id="footer"></footer>
+<!-- closing the body -->
+</body>
+<!-- complete -->
+</html>

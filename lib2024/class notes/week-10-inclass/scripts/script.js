@@ -66,7 +66,7 @@ function changeColor() {
 	// "this" is the keyword used to access the current element that is being interacted with 
 	// in this case, "this" targets the color box that is being clicked
 
-	// alert is used to create an alert box with the text given in the brackets 
+	// alert is used  o create an alert box with the text given in the brackets 
 	// in JS to concatenate JS variables with text/string we use + symbol
 	// alert(elementId);
 	// alert("clicked")

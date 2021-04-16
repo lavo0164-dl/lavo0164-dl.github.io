@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- check the href -->
+	<meta charset="utf-8">
+	<meta name="Author" content="Dave Lavoie">
+	<meta name="Description" content="This is the final assignment">
+	<meta name="keywords" content="HTML, HTML5, CSS, responsive CSS, animation and Javascript">
+	<meta name="robots" content="no index, no follow">
+</head>
+<header class="site-header" id="site-header">
+	<div class="">	
+		<h1>MY LOGO</h1>
+	</div>
+		<nav class="main-nav-container-desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main clearfix" id="main">
+		<section class="main-text">
+			<h2>ABOUT</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat velit pretium, varius est ut, pharetra justo. In sit amet mauris quis justo tempus pulvinar. Curabitur ultricies vel risus at placerat. Aliquam pharetra nisl non urna tincidunt consequat. Curabitur et ante vel nunc venenatis vestibulum sit amet ut turpis. Vestibulum sagittis, elit eget blandit hendrerit, nisi neque viverra lorem, in hendrerit arcu libero at neque. Suspendisse interdum fermentum eros non lacinia. Sed finibus efficitur libero nec dictum. Sed vitae odio nibh.</p><br>
+			<p>Vivamus risus tellus, consequat commodo euismod vitae, laoreet ut ex. Integer tincidunt quam arcu, vitae fringilla risus iaculis non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor porttitor libero, et aliquam ex fringilla sed. Nam mollis tempor quam sed cursus. Nullam porta dui consectetur, venenatis ante at, tempus nulla. Proin mattis et lectus fermentum egestas.</p>
+		</section>
+		<aside class="aside clearfix" id="sidebar">
+			<div>
+				<img src="img/city.jpg" alt="city">
+			</div>
+		</aside>
+		<!-- remember to style off class, .table -->
+		<section id="schedule-table" class="tables">
+			<h2>Schedule</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>TIME</th>
+							<th>MONDAY</th>
+							<th>TUESDAY</th>
+							<th>WEDNESDAY</th>
+							<th>THURSDAY</th>
+							<th>FRIDAY</th>
+						</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>09:00-11:00</td>
+							<td>Communications 1</td>
+							<td>Client Services</td>
+							<td>Special Collections</td>
+							<td>Directed Research Seminar</td>
+							<td>Client Services</td>
+						</tr>
+						<tr>
+							<td>11:00-12:30</td>
+							<td>Reference</td>
+							<td>Internet App</td>
+							<td>Library Software</td>
+							<td>French</td>
+							<td>Reference</td>
+						<tr>
+							<td>14:00-15:00</td>
+							<td>Aquisitions</td>
+							<td>General Elective</td>
+							<td>Marketing</td>
+							<td>Emerging Library Tech</td>
+							<td>Library Software</td>
+						</tr>
+						<tr>
+							<td>15:30-17:30</td>
+							<td>French</td>
+							<td>French</td>
+							<td>Aquisitions</td>
+							<td>Subject Analysis</td>
+							<td>Internet App</td>
+							</tr>
+						</tbody>
+				</table>
+			<section class="form-value-transfer clearfix">
+				<form id="form" action="submit.php" method="post">
+					<p>
+						<h2>EDIT PROFILE</h2>
+						<label>Name</label>
+						<input type="text" name="name" id="name"></p>
+					<p>
+						<label>Email</label>
+						<input type="email" required name="email" id="email">
+					</p>
+					<p>
+						<label>Address</label>
+						<input type="address" required name="address" id="address">
+					</p>
+					<p>
+						<label>City</label>
+						<input type="city" required name="city" id="city">
+					</p>
+					<p>
+						<label for="province">Province:</label>
+					<select name="province" id="province">
+						<option value="ontario">Ontario</option>
+						<option value="quebec">Quebec</option>
+						<option value="nova scotia" selected>Nova Scotia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="british columbia">British Columbia</option>
+					</select>
+					</p>
+					<p>
+						<label>Postal Code</label>
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+					<button type="submit">Submit</button>
+				</form>
+				<div id="results">
+					<h2>PROFILE INFO</h2>
+					<i class="fas fa-user-circle"></i>
+					<p >Name: <span id="name_result"></span></p>
+					<p >Email: <a href="#" id="email_result"></a></p>
+					<p >Address: <span id="address_result"></span></p>
+					<p >City: <span id="city_result"></span></p>
+					<p >Province: <span id="province_result"></span></p>
+					<p >Postal Code: <span id="pc_result"></span></p>
+				</div>
+			</main>	
+		<footer>
+			<h3>QUICK LINKS</h3>
+			<article>
+				<div>
+					<nav class="quick-nav-container">
+				<p>
+					<a href="schedule.html">Schedule</a>
+				</p>
+				<p>
+					<a href="about.html">About</a>
+				</p>
+				<p>
+					<a href="portfolio.html">Portfolio</a>
+				</p>
+				<p>
+					<a href="contact.html">Contact</a>
+				</p>
+		</nav>
+				</div>	
+			</article>
+			<article>
+				<nav class="media-box clearfix" id="media-box">
+				<ul>
+					<li>
+						<a href="http://facebook.com"><img class="icon" src="img/facebook.png"></a>
+					</li>
+					<li>
+						<a href="http://youtube.com"><img class="icon" src="img/youtube.png"></a>
+					</li>
+					<li>
+						<a href="http://twitter.com"><img class="icon" src="img/twitter.png"></a>
+					</li>
+				</ul>
+			</nav>
+			</article>
+			<h3>ADDRESS</h3>
+			<article>
+				<p>1385 Woodroffe Ave</p>
+				<p>Nepean, ON, K2G 1V8</p>
+				<p>Canada</p>
+			</article>
+				</footer>
+</html>					

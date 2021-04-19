@@ -57,11 +57,7 @@ img{
 	display: table;
 	clear: both;
 }
-/*colour pallete
-	Black : #000000
-	Green : #7cc576
-	Blue  : #6dcff6
-	White : #ffffff*/
+
 html{
 	max-width: 960px;
 }
@@ -82,15 +78,15 @@ header,footer{
 }
 
 .logo {
-	/*float: left;*/
+	float: left;
 	width:150px;
 	padding: 15px;
 	box-sizing: border-box;
 }
 
 .main-nav-container{
-	padding: 10px;
-	display:block;
+	max-width: 960px;
+	
 }
 
 .main-nav-container li{

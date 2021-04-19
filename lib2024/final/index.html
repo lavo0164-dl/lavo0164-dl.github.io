@@ -1,21 +1,29 @@
 <!DOCTYPE html>
+<!-- creating the html and language requirements -->
 <html lang="en-ca">
+<!-- head tag beginning -->
 <head>
 	<title>Final</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- the font awesome replacement style sheet is included here -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- adding base css file -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- including fonts stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<!-- check the href -->
+	<!-- establishing the metas -->
 	<meta charset="utf-8">
 	<meta name="Author" content="Dave Lavoie">
 	<meta name="Description" content="This is the final assignment">
 	<meta name="keywords" content="HTML, HTML5, CSS, responsive CSS, animation and Javascript">
 	<meta name="robots" content="no index, no follow">
 </head>
+<!-- head tag complete -->
+<!-- header containing nav list is below -->
 <header class="site-header" id="site-header">
-	<div class="">	
+	<div class="logo">	
 		<h1>MY LOGO</h1>
 	</div>
-		<nav class="main-nav-container-desktop-nav">
+		<nav class="main-nav-container desktop-nav">
 			<ul class="main-nav clearfix">
 				<li>
 					<a href="home.html">Home</a>
@@ -35,19 +43,23 @@
 			</ul>
 		</nav>
 	</header>
+	<!-- the header is complete -->
+	<!-- main section begins below -->
 	<main class="main clearfix" id="main">
+		<!-- creating a section for the about and lorem ipsum text -->
 		<section class="main-text">
 			<h2>ABOUT</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat velit pretium, varius est ut, pharetra justo. In sit amet mauris quis justo tempus pulvinar. Curabitur ultricies vel risus at placerat. Aliquam pharetra nisl non urna tincidunt consequat. Curabitur et ante vel nunc venenatis vestibulum sit amet ut turpis. Vestibulum sagittis, elit eget blandit hendrerit, nisi neque viverra lorem, in hendrerit arcu libero at neque. Suspendisse interdum fermentum eros non lacinia. Sed finibus efficitur libero nec dictum. Sed vitae odio nibh.</p><br>
 			<p>Vivamus risus tellus, consequat commodo euismod vitae, laoreet ut ex. Integer tincidunt quam arcu, vitae fringilla risus iaculis non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor porttitor libero, et aliquam ex fringilla sed. Nam mollis tempor quam sed cursus. Nullam porta dui consectetur, venenatis ante at, tempus nulla. Proin mattis et lectus fermentum egestas.</p>
 		</section>
+		<!-- creating aside to contain the picture -->
 		<aside class="aside clearfix" id="sidebar">
 			<div>
 				<img src="img/city.jpg" alt="city">
 			</div>
 		</aside>
-		<!-- remember to style off class, .table -->
-		<section id="schedule-table" class="tables">
+		<!-- creating section to contain the schedule -->
+		<section id="schedule-table clearfix" class="tables">
 			<h2>Schedule</h2>
 				<table>
 					<thead>
@@ -94,25 +106,32 @@
 							</tr>
 						</tbody>
 				</table>
+				<!-- table complete -->
+				<!-- creating a section and the form below-->
 			<section class="form-value-transfer clearfix">
 				<form id="form" action="submit.php" method="post">
 					<p>
 						<h2>EDIT PROFILE</h2>
 						<label>Name</label>
+						<!-- to allow for the name -->
 						<input type="text" name="name" id="name"></p>
 					<p>
+						<!-- to allow for the email -->
 						<label>Email</label>
 						<input type="email" required name="email" id="email">
 					</p>
 					<p>
+						<!-- to allow for the address -->
 						<label>Address</label>
 						<input type="address" required name="address" id="address">
 					</p>
 					<p>
+						<!-- to allow for the city -->
 						<label>City</label>
 						<input type="city" required name="city" id="city">
 					</p>
 					<p>
+						<!-- these elements allow for a label and a drop bown menu -->
 						<label for="province">Province:</label>
 					<select name="province" id="province">
 						<option value="ontario">Ontario</option>
@@ -123,11 +142,14 @@
 					</select>
 					</p>
 					<p>
+						<!-- these elements allow for the label and postal code entry -->
 						<label>Postal Code</label>
 						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
 					</p>
+					<!-- the button element allows for the above form submission -->
 					<button type="submit">Submit</button>
 				</form>
+				<!-- the results from the form to populate below -->
 				<div id="results">
 					<h2>PROFILE INFO</h2>
 					<i class="fas fa-user-circle"></i>
@@ -138,12 +160,15 @@
 					<p >Province: <span id="province_result"></span></p>
 					<p >Postal Code: <span id="pc_result"></span></p>
 				</div>
-			</main>	
-		<footer>
+				<!-- main is complete -->
+			</main>
+				<!-- footer begins -->
+		<footer class="footer" id="footer">
 			<h3>QUICK LINKS</h3>
+			<!-- an article to contain the links -->
 			<article>
 				<div>
-					<nav class="quick-nav-container">
+					<nav class="quick-nav-container clearfix" id="quick-nav">
 				<p>
 					<a href="schedule.html">Schedule</a>
 				</p>
@@ -159,6 +184,7 @@
 		</nav>
 				</div>	
 			</article>
+			<!-- an article to contain the social media icons and links -->
 			<article>
 				<nav class="media-box clearfix" id="media-box">
 				<ul>
@@ -174,11 +200,15 @@
 				</ul>
 			</nav>
 			</article>
+			<!-- a final article to contain the address info -->
 			<h3>ADDRESS</h3>
-			<article>
+			<article class="footer-address clearfix">
 				<p>1385 Woodroffe Ave</p>
 				<p>Nepean, ON, K2G 1V8</p>
 				<p>Canada</p>
 			</article>
+			<!-- close article -->
+			<!-- close footer below -->
 				</footer>
+				<!-- close html and complete -->
 </html>					

@@ -47,7 +47,7 @@
 	<!-- main section begins below -->
 	<main class="main clearfix" id="main">
 		<!-- creating a section for the about and lorem ipsum text -->
-		<section class="main-text">
+		<section class="main-text clearfix">
 			<h2>ABOUT</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat velit pretium, varius est ut, pharetra justo. In sit amet mauris quis justo tempus pulvinar. Curabitur ultricies vel risus at placerat. Aliquam pharetra nisl non urna tincidunt consequat. Curabitur et ante vel nunc venenatis vestibulum sit amet ut turpis. Vestibulum sagittis, elit eget blandit hendrerit, nisi neque viverra lorem, in hendrerit arcu libero at neque. Suspendisse interdum fermentum eros non lacinia. Sed finibus efficitur libero nec dictum. Sed vitae odio nibh.</p><br>
 			<p>Vivamus risus tellus, consequat commodo euismod vitae, laoreet ut ex. Integer tincidunt quam arcu, vitae fringilla risus iaculis non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor porttitor libero, et aliquam ex fringilla sed. Nam mollis tempor quam sed cursus. Nullam porta dui consectetur, venenatis ante at, tempus nulla. Proin mattis et lectus fermentum egestas.</p>
@@ -109,7 +109,7 @@
 				<!-- table complete -->
 				<!-- creating a section and the form below-->
 			<section class="form-value-transfer clearfix">
-				<form id="form" action="submit.php" method="post">
+				<form class="form" action="submit.php" method="post">
 					<p>
 						<h2>EDIT PROFILE</h2>
 						<label>Name</label>
@@ -150,7 +150,7 @@
 					<button type="submit">Submit</button>
 				</form>
 				<!-- the results from the form to populate below -->
-				<div id="results">
+				<div class="results">
 					<h2>PROFILE INFO</h2>
 					<i class="fas fa-user-circle"></i>
 					<p >Name: <span id="name_result"></span></p>
@@ -189,13 +189,20 @@
 				<nav class="media-box clearfix" id="media-box">
 				<ul>
 					<li>
-						<a href="http://facebook.com"><img class="icon" src="img/facebook.png"></a>
+						<!-- <a href="http://facebook.com"><img class="icon" src="img/facebook.png"></a> -->
+						<a href="http://facebook.com">
+						<i class="fab fa-facebook"></i>
 					</li>
 					<li>
-						<a href="http://youtube.com"><img class="icon" src="img/youtube.png"></a>
+						<!-- <a href="http://youtube.com"><img class="icon" src="img/youtube.png"></a> -->
+						<a href="http://youtube.com">
+						<i class="fab fa-youtube"></i>
 					</li>
 					<li>
-						<a href="http://twitter.com"><img class="icon" src="img/twitter.png"></a>
+						<!-- <a href="http://twitter.com"><img class="icon" src="img/twitter.png"></a> -->
+						<a href="http://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
 					</li>
 				</ul>
 			</nav>

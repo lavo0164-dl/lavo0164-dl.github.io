@@ -57,10 +57,6 @@ img{
 	display: table;
 	clear: both;
 }
-
-html{
-	max-width: 1024px;
-}
 h1{
 	font-size: 36px;
 	box-sizing: border-box;
@@ -74,61 +70,73 @@ h3{
 }
 header{
 	width:100%;
-	background:#72a9ae;
 }
 footer{
 	width:100%;
 	background:#454545;
 }
 
-/*.site-header{
+.site-header{
 	width:100%;
 	float: left;
-	box-sizing: border-box;*/
+	box-sizing: border-box;
 }
 
 /*.main-nav-container{
 	display:block;
 }*/
-
-/*.main-nav-container li{
+.main-nav-container li{
+	padding: 20px;
+	width: 20%;
+	box-sizing: border-box;
+	float: left;
+}
+.main-nav-container a{
+	background: #72a9ae;
+	display: block;
 	padding: 20px;
 	width: 100%;
-	box-sizing: border-box;
-	float: left;
-	display: block;
-	border-radius: 5%;*/
 }
-/*.main-nav-container a{
-	background: #6dcff6;
-	display: block;
-	padding: 20px;
-	width: 100%*/
+.main-text{
+	width:55%;
+	float: left;
+	box-sizing: border-box;
+	padding:20px;
 }
 .aside img{
-	float:left;
-}
-.schedule-table{
+	float:right;
+	width:35%;
+	resize: 75%;
 	box-sizing: border-box;
-	float: left;
-	display: block;
-	border-radius: 5%;
+	padding:20px;
+}
+table, th, td{
+	box-sizing: border-box;
+	border-collapse: collapse;
+	text-align: center; 
+	padding: 2px 3px;
 	border: 1px solid black;
+}
+.form{
+	float:left;
+	width:45%;
+}
+.results{
+	float: right;
+	width: 40%;
+	border: 5px;
 }
 .quick-nav.container{
 	float: left;
 }
-.media-box li{
-	text-align: center;
-	display: block;
-	width:40%;
-	padding:10px;
+.media-box{
+	padding: 15px;
+	width: 100%;
 	box-sizing: border-box;
 }
 .footer-address p{
 	float: right;
 }
-
 .main{
 	background-image: url("../img/moroccan-flower.png");
 }
